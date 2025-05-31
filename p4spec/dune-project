@@ -1,0 +1,15 @@
+(lang dune 3.7)
+(using menhir 2.0)
+(using mdx 0.2)
+(name p4spec)
+
+(generate_opam_files true)
+
+(package
+  (name p4spec)
+  (version 0.0.1)
+  (depends
+    p4cherry
+    bignum
+    (core (and (>= "v0.15.0") (< "v0.16.0")))
+    (core_unix (and (>= "v0.15.0") (< "v0.16.0")))))

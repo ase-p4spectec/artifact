@@ -1,0 +1,16 @@
+(include_subdirs qualified)
+
+(library
+ (name interp_sl)
+ (libraries
+  util
+  domain
+  xl
+  el
+  il
+  sl
+  structure
+  runtime_static
+  runtime_dynamic_sl
+  runtime_testgen
+  p4))
